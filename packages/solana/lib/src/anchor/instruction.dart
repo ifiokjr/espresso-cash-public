@@ -1,5 +1,5 @@
 import 'package:convert/convert.dart';
-import 'package:cryptography/cryptography.dart';
+import 'package:cryptography_plus/cryptography_plus.dart';
 import 'package:solana/src/crypto/crypto.dart';
 import 'package:solana/src/encoder/account_meta.dart';
 import 'package:solana/src/encoder/byte_array.dart';

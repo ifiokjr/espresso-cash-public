@@ -1,4 +1,4 @@
-import 'package:cryptography/cryptography.dart';
+import 'package:cryptography_plus/cryptography_plus.dart';
 import 'package:solana/solana.dart';
 
 export 'ed25519_hd_keypair.dart';

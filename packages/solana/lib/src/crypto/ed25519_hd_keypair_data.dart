@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:cryptography/cryptography.dart';
+import 'package:cryptography_plus/cryptography_plus.dart';
 import 'package:solana/src/crypto/ed25519_hd_public_key.dart';
 
 class Ed25519HDKeyPairData implements KeyPairData {

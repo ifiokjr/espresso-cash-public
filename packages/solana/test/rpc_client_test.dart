@@ -2,7 +2,7 @@
 
 import 'dart:async';
 
-import 'package:bip39/bip39.dart';
+import 'package:bip39_mnemonic/bip39_mnemonic.dart';
 import 'package:solana/dto.dart';
 import 'package:solana/encoder.dart';
 import 'package:solana/solana.dart';
@@ -11,6 +11,8 @@ import 'package:test/test.dart';
 import 'config.dart';
 
 const int _transferredAmount = lamportsPerSol;
+
+String generateMnemonic() => Mnemonic.generate(Language.english).sentence;
 
 void main() {
   group('Timeout exceptions', () {

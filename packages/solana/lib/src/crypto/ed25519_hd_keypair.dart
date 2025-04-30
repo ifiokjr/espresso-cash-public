@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bip39/bip39.dart' as bip39;
-import 'package:cryptography/cryptography.dart'
+import 'package:bip39_mnemonic/bip39_mnemonic.dart';
+import 'package:cryptography_plus/cryptography_plus.dart'
     show Ed25519, KeyPair, KeyPairType, SimpleKeyPairData, SimplePublicKey;
 import 'package:ed25519_hd_key/ed25519_hd_key.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -64,7 +64,7 @@ class Ed25519HDKeyPair extends KeyPair {
   ///
   /// and passing the [mnemonic] seed phrase
   static Future<Ed25519HDKeyPair> fromMnemonic(String mnemonic, {int? account, int? change}) {
-    final List<int> seed = bip39.mnemonicToSeed(mnemonic);
+    final List<int> seed = Mnemonic.fromSentence(mnemonic, Language.english).seed;
 
     return Ed25519HDKeyPair.fromSeedWithHdPath(seed: seed, hdPath: getHDPath(account, change));
   }

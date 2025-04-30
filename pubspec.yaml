@@ -1,7 +1,18 @@
 name: espresso_cash_workspace
 
 environment:
-  sdk: ^3.0.0
+  sdk: ^3.7.2
+
+workspace:
+  - packages/borsh
+  - packages/borsh_annotation
+  - packages/jsonrpc_client
+  - packages/jupiter_aggregator
+  - packages/solana
+  - packages/solana_mobile_client
+  - packages/solana_mobile_wallet
+  - packages/solana_seed_vault
 
 dev_dependencies:
-  melos: ^6.3.2
+  melos: ^7.0.0-dev.8
+

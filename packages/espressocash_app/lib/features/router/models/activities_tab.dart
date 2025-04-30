@@ -1,1 +1,0 @@
-enum ActivitiesTab { pending, transactions }
