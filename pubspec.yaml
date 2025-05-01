@@ -10,9 +10,15 @@ workspace:
   - packages/jupiter_aggregator
   - packages/solana
   - packages/solana_mobile_client
+  - packages/solana_mobile_client/example
   - packages/solana_mobile_wallet
+  - packages/solana_mobile_wallet/example
   - packages/solana_seed_vault
+  - packages/solana_seed_vault/example
 
 dev_dependencies:
   melos: ^7.0.0-dev.8
 
+command:
+  version:
+    workspaceChangelog: false
